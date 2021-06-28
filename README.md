@@ -30,8 +30,11 @@ Langages utilisés :
 
 Outils utilisés :
 
-    Template : nicepage
-    Maquettes et wireframe : Photoshop et Illustrator
+    Figma pour le maquettage, le wireframe, ...
+    Illustator et PS si besoin de crée un LOGO
+    VS Code pour l'éditeur de texte
+    Trello pour attribuer les tâches 
+    Github pour gerer les fichiers
 
 Collaborateurs :
 
@@ -48,7 +51,8 @@ Collaborateurs :
     
     -S’occuper des requêtes avec la base de données
     -S’occuper du MCD
-    -S’occuper du controller
+    -S’occuper du controller 
+    
     
     Jonathan JUILLERAT Chef de projet → 
     
