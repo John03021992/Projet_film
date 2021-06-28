@@ -55,8 +55,9 @@ Collaborateurs :
     -S’occuper du github du projet
     -Etablir une convention de codage
     -Etablir une organisation de dossiers
-    -Etablir une convention de nommage-Créer, découper et assigner les tâches + gestion dutemps
-    -Choisir les technos/outils à utiliser-Router avec Switch-Review de code
+    -Etablir une convention de nommage-Créer, découper et assigner les tâches + gestion du temps
+    -Choisir les technos/outils à utiliser
+    -Router avec Switch-Review de code
     -Résolution des bugs
     -Mise en ligne du projet
     
