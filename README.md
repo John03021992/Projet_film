@@ -39,7 +39,7 @@ Outils utilisés :
 
 Collaborateurs :
 
-    Bryan PERGAUX Dev front → 
+    Bryan PERGAUD Dev front → 
     
     -Réaliser les wireframes
     -Réaliser les maquettes
