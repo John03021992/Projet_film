@@ -60,9 +60,11 @@ Collaborateurs :
     -S’occuper du github du projet
     -Etablir une convention de codage
     -Etablir une organisation de dossiers
-    -Etablir une convention de nommage-Créer, découper et assigner les tâches + gestion du temps
+    -Etablir une convention de nommage-Créer, découper et assigner les tâches + gestion du temps (pomodoro)
     -Choisir les technos/outils à utiliser
-    -Router avec Switch-Review de code
+    -Router avec Switch
+    -Organiser des réunions 2 fois par jour minimum (méthodeagile)
+    -S’occuper du htaccess
+    -Review de code
     -Résolution des bugs
     -Mise en ligne du projet
-    
