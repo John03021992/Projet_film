@@ -36,6 +36,8 @@ Outils utilisés :
     VS Code pour l'éditeur de texte
     Trello pour attribuer les tâches 
     Github pour gerer les fichiers
+    Framework Bootstrap
+    
 
 Collaborateurs :
 
