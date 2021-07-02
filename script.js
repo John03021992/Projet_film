@@ -19,12 +19,12 @@ console.log(liValue.textContent);
 
 
 
-$('.test').bind('click', function(){
+$('.test').click(function(e){
 
     $.ajax({
         type:'POST',
         url:'http://localhost/dossier_projet_film/Projet_film//controller/categories_controller.php',
-        data: dataString,
+        data: $(this).textContent,
         success:function(success){
             console.log('success');
             $('body').html(JSON.parse(success));

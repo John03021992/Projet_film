@@ -14,10 +14,10 @@
 
     <ul>
         <li>
-            <a href="#" class="test">Comédie</a>
+            <button class="test">Comédie</button>
         </li>
         <li>
-            <a href="#" class="test">Drame</a>
+            <button class="test">Drame</button>
         </li>
     </ul>
     
