@@ -1,6 +1,6 @@
 <?php
 
-    require('connexion.php');
+    require('../connexion.php');
     $searchValue = $_POST['search'];
 
     $reqSearch = $bdd->prepare("SELECT films.titre, films.description, group_concat(Genres.genres) as genres, Annees.annee, Realisateurs.realisateurs

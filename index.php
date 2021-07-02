@@ -11,6 +11,15 @@
     <input type="search" name="search" placeholder="Recherche">
     <input type="submit" name="envoyer">
     </form>
+
+    <ul>
+        <li>
+            <a href="#" class="test">Comédie</a>
+        </li>
+        <li>
+            <a href="#" class="test">Drame</a>
+        </li>
+    </ul>
     
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

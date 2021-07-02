@@ -1,5 +1,5 @@
 <?php
-require('searchBar_modele.php');
+require('../modele/searchBar_modele.php');
 
 
 if(isset($_POST['search']) AND !empty($_POST['search'])){
