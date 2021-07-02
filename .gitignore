@@ -1,1 +1,5 @@
-Projet_film/connexion.php
+connexion.php
+node_modules
+.eslintrc.json
+.htaccess
+package-lock.json
