@@ -15,13 +15,19 @@
                                 GROUP BY films.idfilms, films.titre,films.description');
 
     $req_film->execute();
-    $films = $req_film->fetchAll(PDO::FETCH_NUM);
+    // $films = $req_film->fetchAll(PDO::FETCH_NUM);
+    
     
     // for($f = 0; $f <= 41; $f++){
     //         echo JSON_encode($films[$f]);
     //     }
 
-      print_r($films);
+    // Avoir toutes les infos des tableaux
+      
 
+
+    // 1er [0] : avoir toutes les infos du tableau 0, 2ème[0] : Naviguer dans le tableau (titre, description...)
     // print_r($films[0][0]);
+    $films = $req_film->fetch(PDO::FETCH_NUM);
+    print_r($films);
 ?>
