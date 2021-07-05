@@ -1,6 +1,8 @@
 <?php
 
-    include "../connexion.php";
+require('../connexion.php');
+
+// function getAllInfos($bdd){
 
     $req_film = $bdd->prepare('SELECT films.titre, films.description, group_concat(Genres.genres) as genres, Annees.annee, Realisateurs.realisateurs, films.affiche
                                 FROM films
