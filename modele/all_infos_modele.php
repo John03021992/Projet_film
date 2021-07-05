@@ -1,8 +1,8 @@
 <?php
 
-    include "connexion.php";
+    include "../connexion.php";
 
-    $req_film = $bdd->prepare('SELECT films.titre, films.description, group_concat(Genres.genres) as genres, Annees.annee, Realisateurs.realisateurs
+    $req_film = $bdd->prepare('SELECT films.titre, films.description, group_concat(Genres.genres) as genres, Annees.annee, Realisateurs.realisateurs, films.affiche
                                 FROM films
                                 INNER JOIN films_has_Genres
                                     ON films_has_Genres.films_idfilms =films.idfilms
@@ -15,19 +15,9 @@
                                 GROUP BY films.idfilms, films.titre,films.description');
 
     $req_film->execute();
-    // $films = $req_film->fetchAll(PDO::FETCH_NUM);
     
-    
-    // for($f = 0; $f <= 41; $f++){
-    //         echo JSON_encode($films[$f]);
-    //     }
-
-    // Avoir toutes les infos des tableaux
-      
-
-
-    // 1er [0] : avoir toutes les infos du tableau 0, 2ème[0] : Naviguer dans le tableau (titre, description...)
-    // print_r($films[0][0]);
-    $films = $req_film->fetch(PDO::FETCH_NUM);
-    print_r($films);
+    $films = $req_film->fetchAll(PDO::FETCH_ASSOC);
 ?>
+
+
+

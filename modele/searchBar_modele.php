@@ -3,7 +3,7 @@
     require('../connexion.php');
     $searchValue = $_POST['search'];
 
-    $reqSearch = $bdd->prepare("SELECT films.titre, films.description, group_concat(Genres.genres) as genres, Annees.annee, Realisateurs.realisateurs
+    $reqSearch = $bdd->prepare("SELECT films.titre, films.description, group_concat(Genres.genres) as genres, Annees.annee, Realisateurs.realisateurs, films.affiche
                                 FROM films
                                 INNER JOIN films_has_Genres
                                     ON films_has_Genres.films_idfilms =films.idfilms
@@ -21,3 +21,4 @@
     $searchInfo = $reqSearch->fetchAll(PDO::FETCH_NUM);
 
 ?>
+

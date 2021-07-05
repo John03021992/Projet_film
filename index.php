@@ -10,17 +10,10 @@
     <form method="POST">
     <input type="search" name="search" placeholder="Recherche">
     <input type="submit" name="envoyer">
+    <button class="test" value="Drame" >Drame</button>
+    <button class="test" value="Thriller" >Thriller</button>
     </form>
 
-    <ul>
-        <li>
-            <button class="test">Comédie</button>
-        </li>
-        <li>
-            <button class="test">Drame</button>
-        </li>
-    </ul>
-    
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
