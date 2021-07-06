@@ -3,7 +3,7 @@
 Consigne du projet :
 
     Le but de ce projet est de créer un annuaire de film de type “allociné”
-    Rendu du projet : 5 juillet 2021
+    Rendu du projet : 12 juillet 2021
     
 Etape 1 :     
     
