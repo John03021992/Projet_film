@@ -1,23 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<?php
 
-    <form method="POST">
-    <input type="search" name="search" placeholder="Recherche">
-    <input type="submit" name="envoyer">
-    <button class="test" value="Drame" >Drame</button>
-    <button class="test" value="Thriller" >Thriller</button>
-    </form>
+ include "./views/includes/header.php"; 
 
-    <div></div>
+// var_dump($_SERVER);
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-</body>
-</html>
+$url = '';
+if(isset($_SERVER['REQUEST_URI'])){
+$url = explode('/', $_SERVER['REQUEST_URI']);
+}
+
+// var_dump($url);
+
+
+switch ($url) {
+case $url[2] == '':
+    require './views/home_view.php';
+// echo 'Home page';
+break;
+case $url[2] == 'film' AND !empty($url[3]):
+echo 'Film numéro '.$url[3];
+break;
+case $url[2] == 'film':
+echo 'LA page des films';
+break;
+default:
+http_response_code(404);
+echo "404";
+break;
+}
+
+
+  include "./views/includes/footer.php"?>   
