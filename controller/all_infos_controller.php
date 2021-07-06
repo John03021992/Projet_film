@@ -1,7 +1,8 @@
 <?php
-require('../modele/all_infos_modele.php');
 
-$req = $films;
+require('../model/all_infos_model.php');
 
-require('all_infos_vue.php');
+
+require_once('../vue/all_infos_vue.php');
+
 ?>

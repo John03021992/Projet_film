@@ -1,5 +1,5 @@
 <?php
-require('../modele/categories_modele.php');
+require('../model/categories_model.php');
 
 
 if(isset($_POST['value']) AND !empty($_POST['value'])){

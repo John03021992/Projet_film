@@ -1,5 +1,5 @@
 <?php 
-    require ('../modele/categories_modele.php');
+    require ('../controller/categories_controller.php');
 ?>
     
 <p>

@@ -7,17 +7,19 @@
     <title>Document</title>
 </head>
 <body>
-    <?php 
-        require ('../controller/all_infos_controller.php');
-    ?>
-    
+
+<?php
+    include ('../controller/all_infos_controller.php');
+?>
+
 <p>
     <?php foreach($films as $film): ?>
-    <h1><?php echo $film["annee"]?></h1><?php endforeach; ?>
+    <h1><?php echo $film["titre"]?></h1><?php endforeach ?>
 </p>
 
 <?php 
-        $req->closeCursor();
+        $req_film->closeCursor();
 ?>
+
 </body>
 </html>

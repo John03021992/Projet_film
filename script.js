@@ -7,9 +7,7 @@ $('form').bind('submit',function(e){
         url:'http://localhost/dossier_projet_film/Projet_film//controller/searchBar_controller.php',
         data:$(this).serialize(),
         success:function(success){
-            console.log('success');
-            $('body').html(JSON.parse(success));
-
+            $('div').html(JSON.parse(success));
         }
     })
 });
@@ -27,7 +25,6 @@ $('.test').click(function(e){
             value: val 
             },
         success:function(success){
-            console.log('success');
             $('body').html(JSON.parse(success));
         }
 
