@@ -1,7 +1,6 @@
 <?php
-// require('modele.php');
+require('../models/home_model.php');
 
-// $req = ();
 
-// require('./views/home_view.php');
+require_once('../views/home_view.php');
 ?>

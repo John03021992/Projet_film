@@ -1,7 +1,14 @@
 <?php
-// require('modele.php');
+require('../models/categories_model.php');
 
-// $req = ();
 
-// require('./views/home_view.php');
+if(isset($_POST['value']) AND !empty($_POST['value'])){
+
+echo JSON_encode(getFilmByCat($_POST['value'], $bdd));
+
+}
+else{
+echo 'Erreur';
+}
+
 ?>

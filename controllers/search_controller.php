@@ -1,7 +1,14 @@
 <?php
-// require('modele.php');
+require('../models/search_model.php');
 
-// $req = ();
 
-// require('./views/home_view.php');
+if(isset($_POST['search']) AND !empty($_POST['search'])){
+
+echo JSON_encode($searchInfo);
+
+}
+else{
+echo 'Erreur';
+}
+
 ?>
