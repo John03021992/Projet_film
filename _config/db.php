@@ -1,4 +1,12 @@
 <?php
 
-/* $db = new DB(DATABASE_HOST, DATABASE_NAME, DATABASE_USER, DATABASE_PASSWORD);
-$db->setFetchMode(PDO::FETCH_ASSOC); */
+try
+{
+$bdd = new PDO('mysql:host=localhost;dbname=projet_film;charset=utf8', 'laury', 'quarto.l');
+}
+catch (Exception $e)
+{
+die('Erreur : ' . $e->getMessage());
+}
+
+?>
