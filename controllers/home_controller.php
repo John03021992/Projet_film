@@ -1,9 +1,6 @@
 <?php
+require('../models/home_model.php');
 
-require("../");
 
-$req = getMovies(10);
-
-require './vue/index_vue.php';
-
+require_once('../views/home_view.php');
 ?>

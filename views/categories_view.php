@@ -1,3 +1,9 @@
+<?php
+
+require "../controllers/categories_controller.php";
+include "./includes/header.php";
+
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -8,6 +14,6 @@
     <title>Contact - Simple rooting with PHP</title>
 </head>
 <body>
-    <h1>This is page 6</h1>
+    <h1>categories</h1>
 </body>
 </html>

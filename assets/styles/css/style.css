@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "montserrat";
+  src: url(../../polices/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: "montserrat_Bold";
+  src: url(../../polices/Montserrat-Bold.ttf);
+}
+
+body {
+  font-family: "montserrat";
+  font-size: 20px;
+  color: #000000;
+}
+
+body .header {
+  width: 100%;
+  background: black url("../../images/Salle_De_Cinema.png") no-repeat center;
+  background-size: contain;
+  text-align: center;
+  padding: 1px;
+}
+
+.link-secondary {
+  color: #6c757d;
+}
+
+.p-2 {
+  padding: 0.5rem !important;
+}
+
+.py-1 {
+  color: #000000;
+}
+
+.title-page {
+  color: white;
+}
+
+.card-movie {
+  background-color: #900000;
+  color: white;
+}
+
+.card-subtitle {
+  color: #dddddd;
+  font-size: 17px;
+}
+
+.card-movie-year {
+  text-align: right;
+}
+
+section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+/*# sourceMappingURL=style.css.map */
