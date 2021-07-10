@@ -1,7 +1,7 @@
 <?php
 
-require "../controllers/categories_controller.php";
-include "./includes/header.php";
+require "../models/categories_model.php";
+include "../views/includes/header.php";
 
 ?>
 <!DOCTYPE html>
@@ -14,6 +14,31 @@ include "./includes/header.php";
     <title>Contact - Simple rooting with PHP</title>
 </head>
 <body>
-    <h1>categories</h1>
+<div class="container">
+        <div id="cards">
+  <?php foreach ($catFilms as $catFilm): ?>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="<?php echo $catFilm['affiche']?>" class="card-img-top" alt="" height="300">
+            <div class="card-body card-movie">
+              <h4 class="card-title"><?php echo $catFilm['titre']?> <h4>
+              <h5 class="card-subtitle"><?php echo $catFilm['genres']?></h5>
+              <div class="container">
+                <div class="row">
+                  <div class="col"></div>
+                  <div class="col"></div>
+                  <div class="col-6">
+                    <p class="card-movie-year"><?php echo $catFilm['annee']?></p>
+                   </div>
+                </div>
+              </div>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+  <?php endforeach; ?>
+      </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="../assets/js/app.js"></script>    
 </body>
 </html>

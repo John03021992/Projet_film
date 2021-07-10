@@ -14,6 +14,7 @@ ON films.Annees_idAnnee = Annees.idAnnee
 JOIN Realisateurs
 ON films.Realisateurs_idRealisateurs = Realisateurs.idRealisateurs
 WHERE titre LIKE '%$searchValue%'
+OR Realisateurs.realisateurs LIKE '%$searchValue%'
 GROUP BY films.idfilms, films.titre,films.description");
 
 $reqSearch->execute();
