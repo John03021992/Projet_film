@@ -9,185 +9,190 @@
 }
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-body{
-    width: 100%;
-    height: 100%;
-    background: white;
-    font-family: 'Open Sans', sans-serif;
-}
-body, html {
-    height: 100%;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  .bg-image {
-    /* The image used */
-    background-image: url("../../images/Background_cine.jpg");
- 
-    /* Add the blur effect */
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-  
-    /* Full height */
-    height: 70vh;
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  
-  /* Position text in the middle of the page/image */
-  .bg-text {
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-    background-repeat: no-repeat;
 
-  }
-/*Unordonered Liste style*/
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-  
+
+.bg-image {
+  /* The image used */
+  background-image: url("../../images/Background_cine.jpg");
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 70vh;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  background-repeat: no-repeat;
+}
+
 ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 5px;
-    color: #900000;
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 5px;
+  color: #900000;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-  
+
 ul li {
-    margin-top: -1px; /* Prevent double borders */
-    background-color:white;
-    padding: 12px;
+  background-color: white;
+  padding: 12px;
 }
-.categories{
-    color: #900000;
-    background-color: #ffffff;
-    border: 1px solid black;
+
+ul li:hover {
+  cursor: pointer;
+}
+
+.categories {
+  color: #900000;
+  background-color: #ffffff;
+  border: none;
+  font-weight: bold;
+}
+
+.allFilms {
+  font-size: 1rem;
+  color: #900000;
+  background-color: #ffffff;
+  border: none;
+  font-weight: bold;
 }
 /*Placement de la card*/
+
 /*CSS of card */
-.allCards{
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-}
-.catCards{
+.allCards {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
 }
 
-
-
-.cards {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 60%;
-    border-radius: 5px;
-    display: flex;
-    justify-self: center;
-    flex-direction: column;
-    margin-top: 3rem;
-  }
-  
-  .cards:hover {
-    box-shadow: 0 8px 16px 0 #900000;
-    -webkit-animation: heartbeat 2s ease-in-out infinite both;
-	        animation: heartbeat 2s ease-in-out infinite both;
+.catCards {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
 }
 
- @-webkit-keyframes heartbeat {
+.cards {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 60%;
+  border-radius: 5px;
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+.cards:hover {
+  box-shadow: 0 8px 16px 0 #900000;
+  -webkit-animation: heartbeat 2s ease-in-out infinite both;
+  animation: heartbeat 2s ease-in-out infinite both;
+}
+
+@-webkit-keyframes heartbeat {
   from {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     -webkit-transform-origin: center center;
-            transform-origin: center center;
+    transform-origin: center center;
     -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
   }
   10% {
     -webkit-transform: scale(0.91);
-            transform: scale(0.91);
+    transform: scale(0.91);
     -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
   }
   17% {
     -webkit-transform: scale(0.98);
-            transform: scale(0.98);
+    transform: scale(0.98);
     -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
   }
   33% {
     -webkit-transform: scale(0.87);
-            transform: scale(0.87);
+    transform: scale(0.87);
     -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
   }
   45% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
   }
 }
+
 @keyframes heartbeat {
   from {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     -webkit-transform-origin: center center;
-            transform-origin: center center;
+    transform-origin: center center;
     -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
   }
   10% {
     -webkit-transform: scale(0.91);
-            transform: scale(0.91);
+    transform: scale(0.91);
     -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
   }
   17% {
     -webkit-transform: scale(0.98);
-            transform: scale(0.98);
+    transform: scale(0.98);
     -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
   }
   33% {
     -webkit-transform: scale(0.87);
-            transform: scale(0.87);
+    transform: scale(0.87);
     -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
   }
   45% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
   }
 }
 
+.img_cards {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+}
 
-  
- .img_cards {
-    border-radius: 5px 5px 0 0;
-    width: 100%;
-  }
-  
-  .container_cards {
-    padding: 2px 16px;
-  }
+.container_cards {
+  padding: 2px 16px;
+}
 
 /*SearchBar*/
-.search_films{
-    display: flex;
-    justify-content:center;
-    margin-top: 2rem;
+.search_films {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
 }
+
 .search {
   width: 100%;
   position: relative;
@@ -202,10 +207,10 @@ ul li {
   height: 36px;
   border-radius: 5px 0 0 5px;
   outline: none;
-  color: #9DBFAF;
+  color: #9dbfaf;
 }
 
-.searchTerm:focus{
+.searchTerm:focus {
   color: #900000;
 }
 
@@ -222,29 +227,27 @@ ul li {
 }
 
 /*Resize the wrap to see the search bar change!*/
-.wrap{
+.wrap {
   width: 30%;
-
 }
-footer{
+
+footer {
   background: #ffffff;
-  border:1px solid black;
-  margin-top: 1rem;
-    width: 100%;
-    height: 15vh;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-
+  border-top: 1px solid black;
+  margin-top: 2rem;
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-footer i{
+
+footer i {
   color: #900000;
-  width: 5rem;
-
 }
+
 /* The Modal (background) */
 .modal {
-
   z-index: 1; /* Sit on top */
   padding-top: 100px; /* Location of the box */
   left: 0;
@@ -252,8 +255,8 @@ footer i{
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
 /* Modal Content */

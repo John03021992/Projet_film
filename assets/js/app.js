@@ -14,7 +14,7 @@ document.querySelector('.allFilms').addEventListener('click', function(){
 
 function addElement (titre, cat, year, aff) {
 
-    catCards.setAttribute("style", "display:grid;grid-template-columns: 25% 25% 25% 25%; ");
+    
 
     var divCards = document.createElement("div");
     divCards.className = "cards";
@@ -51,12 +51,7 @@ function addElement (titre, cat, year, aff) {
     var textpYear = document.createTextNode(year);
     pYear.appendChild(textpYear);
 
-    //    if(pYear.textContent >= 1){
-    //                 pYear.textContent = "";
-    //                 h4.textContent = "";
-    //                 pCards.textContent = "";
-    //                 imgCards.src = "";
-    //             }
+    catCards.setAttribute("style", "display:grid;grid-template-columns: 25% 25% 25% 25%; ");
 
 }
 
