@@ -1,1 +1,0 @@
-<!-- c'est l'endroit ou mettre les fonctions  -->
