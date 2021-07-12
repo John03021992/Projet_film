@@ -1,6 +1,6 @@
 <?php
 
-require('../_config/db.php');
+require('_config/db.php');
 
 $req_film = $bdd->prepare('SELECT idfilms, films.titre, films.description, group_concat(Genres.genres) as genres, Annees.annee, Realisateurs.realisateurs, films.affiche
 FROM films

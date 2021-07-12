@@ -3,7 +3,7 @@
 require('../_config/db.php');
 $searchValue = $_POST['search'];
 
-$reqSearch = $bdd->prepare("SELECT films.titre, films.description, group_concat(Genres.genres) as genres, Annees.annee, Realisateurs.realisateurs, films.affiche
+$reqSearch = $bdd->prepare("SELECT idfilms, films.titre, films.description, group_concat(Genres.genres) as genres, Annees.annee, Realisateurs.realisateurs, films.affiche
 FROM films
 INNER JOIN films_has_Genres
 ON films_has_Genres.films_idfilms =films.idfilms

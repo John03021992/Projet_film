@@ -13,34 +13,34 @@
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
+  height: 100vh;
 }
 
 * {
   box-sizing: border-box;
 }
 
+/* HEADER image + logo */
+
 .bg-image {
-  /* The image used */
-  background-image: url("../../images/Background_cine.jpg");
-
-  /* Add the blur effect */
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-
-  /* Full height */
+  background-image: url("../../images/Salle_cine.png");
   height: 70vh;
-
-  /* Center and scale the image nicely */
+  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  /* Add the blur effect */
+  /* filter: blur(8px);
+  -webkit-filter: blur(8px); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Position text in the middle of the page/image */
-.bg-text {
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
-  background-repeat: no-repeat;
+/* BAR NAV */
+
+.dropdown {
+  display: none;
 }
 
 ul {
@@ -88,6 +88,8 @@ ul li:hover {
 .catCards {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .cards {
@@ -103,78 +105,6 @@ ul li:hover {
 
 .cards:hover {
   box-shadow: 0 8px 16px 0 #900000;
-  -webkit-animation: heartbeat 2s ease-in-out infinite both;
-  animation: heartbeat 2s ease-in-out infinite both;
-}
-
-@-webkit-keyframes heartbeat {
-  from {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transform-origin: center center;
-    transform-origin: center center;
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  10% {
-    -webkit-transform: scale(0.91);
-    transform: scale(0.91);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  17% {
-    -webkit-transform: scale(0.98);
-    transform: scale(0.98);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  33% {
-    -webkit-transform: scale(0.87);
-    transform: scale(0.87);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  45% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-}
-
-@keyframes heartbeat {
-  from {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transform-origin: center center;
-    transform-origin: center center;
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  10% {
-    -webkit-transform: scale(0.91);
-    transform: scale(0.91);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  17% {
-    -webkit-transform: scale(0.98);
-    transform: scale(0.98);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  33% {
-    -webkit-transform: scale(0.87);
-    transform: scale(0.87);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  45% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
 }
 
 .img_cards {
@@ -183,7 +113,7 @@ ul li:hover {
 }
 
 .container_cards {
-  padding: 2px 16px;
+  padding: 0.5rem;
 }
 
 /*SearchBar*/
@@ -236,7 +166,7 @@ footer {
   border-top: 1px solid black;
   margin-top: 2rem;
   width: 100%;
-  height: 15vh;
+  height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -246,39 +176,178 @@ footer i {
   color: #900000;
 }
 
-/* The Modal (background) */
+
+@media (max-width: 1300px) {
+
+  .allCards {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  }
+
+}
+
+@media (max-width: 1300px) {
+
+  h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .p_cards {
+    font-size: 0.8rem;
+  }
+  
+}
+
+@media (max-width:800px) {
+  
+  /* HEADER */
+  .menu_desktop {
+    display: none;
+  }
+
+  /* DROPDOWN */
+  .dropdown {
+    display: block;
+    align-self: flex-end;
+  }
+
+  .List_Group_Categories {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn_cat {
+    background-color: white;
+    color: #900000;
+    border: #900000 solid 3px;
+  }
+
+  .btn_cat:focus {
+     background-color: white;
+    color: #900000;
+    border: #900000 solid 3px;
+  }
+
+  .btn_cat:hover {
+     background-color: white;
+    color: #900000;
+    border: #900000 solid 3px;
+  }
+
+  /* SEARCH BAR */
+
+  .search_films {
+    width: 90vw;
+  }
+
+  /* CARDS  */
+  .catCards {
+    width: 100%;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .p_cards {
+    display: none;
+  }
+
+  .allCards {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+}
+
+  .cards {
+    width: 90%;
+  }
+
+  .container_cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .catCards {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .wrap {
+    width: 90%;
+  } 
+ 
+}
+
+/*MODALS */
+
 .modal {
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-}
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(77, 77, 77, 0.3);
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.1s;
+    z-index: 1;
+  }
 
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
+  .modal.background {
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+  }
 
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
+  .modal:target {
+    visibility: visible;
+    opacity: 1;
+  }
 
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
+  .modal_content {
+    background-color: white;
+    padding: 1.5em 2em;
+    max-width: 80%;
+    border-radius: 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .modal_content img {
+    max-width:50%;
+    height:auto;
+  }
+
+  .modal_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .modal_description {
+    text-align: justify;
+  }
+
+  .modal_annee {
+    align-self: flex-start;
+  }
+
+  .modal_genre {
+    align-self: flex-start;
+  }
+
+  .modal_close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    color: grey;
+  }

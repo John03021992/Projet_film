@@ -4,7 +4,7 @@ require('../_config/db.php');
 
 function getFilmByCat($catValue, $bdd){
 
-$req_Cat = $bdd->prepare("SELECT films.titre, Genres.genres, films.description, Annees.annee, Realisateurs.realisateurs, films.affiche
+$req_Cat = $bdd->prepare("SELECT idfilms, films.titre, Genres.genres, films.description, Annees.annee, Realisateurs.realisateurs, films.affiche
 FROM films_has_Genres
 JOIN Genres
 ON films_has_Genres.Genres_idGenres = Genres.idGenres
