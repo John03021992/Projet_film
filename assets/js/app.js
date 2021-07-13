@@ -11,19 +11,21 @@ document.querySelector('.allFilms').addEventListener('click', function(){
     console.log('toto');
 });
 
+//création éléments ajax (le même pour les genres et pour la barre de recherche)
 function addElement (titre, cat, year, aff, id, description) {
 
-    var divCards = document.createElement("div");
-    divCards.className = "cards";
-    catCards.appendChild(divCards);
+    var aCards = document.createElement("a");
+    aCards.className = "cards";
+    catCards.appendChild(aCards);
+    aCards.href = "#demo" + id;
     
     var imgCards = document.createElement("img");
     imgCards.className = "img_cards";
-    divCards.appendChild(imgCards);
+    aCards.appendChild(imgCards);
 
     var divContainer = document.createElement("div");
     divContainer.className = "container_cards";
-    divCards.appendChild(divContainer);
+    aCards.appendChild(divContainer);
 
     var h4 = document.createElement("h4");
     divContainer.appendChild(h4);
@@ -48,12 +50,6 @@ function addElement (titre, cat, year, aff, id, description) {
     pYear.appendChild(textpYear);
 
     /*MODAL*/
-    var a_modal = document.createElement("a");
-    divCards.appendChild(a_modal);
-    a_modal.className = "btn_modal";
-    a_modal.textContent = "En savoir plus";
-    a_modal.href = "#demo" + id;
-
     var div_demo = document.createElement("div");
     catCards.appendChild(div_demo);
     div_demo.id = 'demo' + id

@@ -14,29 +14,18 @@ body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
   height: 100vh;
+  background-color: #3e3d3d;
 }
 
 * {
   box-sizing: border-box;
 }
 
-/* HEADER image + logo */
-
-.bg-image {
-  background-image: url("../../images/Salle_cine.png");
-  height: 70vh;
+.bobine {
+  background-image: url(../../images/bobine.jpg);
+  height: 19vh;
   width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* Add the blur effect */
-  /* filter: blur(8px);
-  -webkit-filter: blur(8px); */
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-
 /* BAR NAV */
 
 .dropdown {
@@ -45,7 +34,6 @@ body {
 
 ul {
   justify-content: center;
-  list-style-type: none;
   padding: 0;
   margin: 5px;
   color: #900000;
@@ -63,20 +51,19 @@ ul li:hover {
   cursor: pointer;
 }
 
-.categories {
-  color: #900000;
-  background-color: #ffffff;
-  border: none;
-  font-weight: bold;
+li button::after {
+  background: white;
+}
+
+li button:active {
+  background: white;
 }
 
 .allFilms {
-  font-size: 1rem;
-  color: #900000;
   background-color: #ffffff;
   border: none;
-  font-weight: bold;
 }
+
 /*Placement de la card*/
 
 /*CSS of card */
@@ -100,7 +87,15 @@ ul li:hover {
   display: flex;
   justify-self: center;
   flex-direction: column;
+  justify-content: space-around;
   margin-top: 3rem;
+  text-decoration: none;
+  color: #212529;
+  overflow-x: hidden;
+}
+
+.cards:hover {
+  color: #212529;
 }
 
 .cards:hover {
@@ -109,11 +104,15 @@ ul li:hover {
 
 .img_cards {
   border-radius: 5px 5px 0 0;
-  width: 100%;
+  min-height: 50%;
 }
 
 .container_cards {
   padding: 0.5rem;
+  height: 100%;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
 }
 
 /*SearchBar*/
@@ -156,15 +155,85 @@ ul li:hover {
   font-size: 20px;
 }
 
+/*MODAL*/
+
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba( 255, 255, 255, 0.10 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7.0px );
+    -webkit-backdrop-filter: blur( 7.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.1s;
+    z-index: 1;
+  }
+
+  .modal:target {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .modal_content {
+    background-color: white;
+    padding: 1.5em 2em;
+    max-width: 60%;
+    max-height: 80%;
+    border-radius: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .modal_content img {
+    max-width:50%;
+  }
+
+  .modal_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .modal_description {
+    text-align: justify;
+  }
+
+  .modal_annee {
+    align-self: flex-start;
+  }
+
+  .modal_genre {
+    align-self: flex-start;
+  }
+
+  .modal_close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    color: grey;
+  }
+
 /*Resize the wrap to see the search bar change!*/
 .wrap {
   width: 30%;
 }
 
-footer {
+.icons {
   background: #ffffff;
   border-top: 1px solid black;
-  margin-top: 2rem;
   width: 100%;
   height: 10vh;
   display: flex;
@@ -217,24 +286,6 @@ footer i {
     flex-direction: column;
   }
 
-  .btn_cat {
-    background-color: white;
-    color: #900000;
-    border: #900000 solid 3px;
-  }
-
-  .btn_cat:focus {
-     background-color: white;
-    color: #900000;
-    border: #900000 solid 3px;
-  }
-
-  .btn_cat:hover {
-     background-color: white;
-    color: #900000;
-    border: #900000 solid 3px;
-  }
-
   /* SEARCH BAR */
 
   .search_films {
@@ -256,10 +307,10 @@ footer i {
   }
 
   .allCards {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  width: 100%;
-}
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+  }
 
   .cards {
     width: 90%;
@@ -278,76 +329,55 @@ footer i {
   .wrap {
     width: 90%;
   } 
+
+  /*MODAL MOBILE*/
  
-}
-
-/*MODALS */
-
-.modal {
-    visibility: hidden;
-    opacity: 0;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(77, 77, 77, 0.3);
-    backdrop-filter: blur(2px);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    transition: 0.1s;
-    z-index: 1;
+  .modal_description {
+    font-size: .7rem;
   }
 
-  .modal.background {
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-  }
-
-  .modal:target {
-    visibility: visible;
-    opacity: 1;
+  .img_modal {
+    height: 50%;
+    ALIGN-self: center;
   }
 
   .modal_content {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-color: white;
     padding: 1.5em 2em;
-    max-width: 80%;
-    border-radius: 1rem;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  .modal_content img {
-    max-width:50%;
-    height:auto;
-  }
-
-  .modal_column {
-    display: flex;
+    max-width: 100%;
+    max-height: 100%;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
   }
 
-  .modal_description {
-    text-align: justify;
+  .modal {
+    background-color: white;
   }
 
-  .modal_annee {
-    align-self: flex-start;
+  .nav_menu {
+    display: grid;
+    grid-template-columns: 50% 50%;
   }
 
-  .modal_genre {
-    align-self: flex-start;
+  .categories {
+    padding: 0;
   }
 
-  .modal_close {
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
-    color: grey;
+  .nav-item {
+    padding: 0;
   }
+
+  .logo {
+    width: 90%;
+  }
+}
+
+
+@media (max-width:360px){
+  .nav-item {
+    font-size: .8rem;
+  }
+}

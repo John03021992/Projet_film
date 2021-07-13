@@ -2,6 +2,8 @@
 
 require('_config/db.php');
 
+// Requête pour récupérer les films avec toutes les infos (id, affiche, description, titre, genre )
+
 $req_film = $bdd->prepare('SELECT idfilms, films.titre, films.description, group_concat(Genres.genres) as genres, Annees.annee, Realisateurs.realisateurs, films.affiche
 FROM films
 INNER JOIN films_has_Genres

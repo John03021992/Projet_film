@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url(./font.png);
+  background-image: url(../../images/font.png);
   background-repeat: no-repeat;
   background-size: cover;
 }

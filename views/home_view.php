@@ -5,22 +5,19 @@
 
 <section class="allCards">
 
+<!-- Card type pour tous les films -->
 <?php foreach ($films as $film): ?>
   
-    <div class="cards" id=<?php echo $film['idfilms']?>>
-      <!--First Card Creation-->
+    <a href="#demo_modal<?php echo $film['idfilms']?>" class="cards">
       <img  class="img_cards" src="<?php echo $film['affiche']?>"  alt="Affiche film <?php echo $film['titre']?>" >
       <div class="container_cards">
         <h4><?php echo $film['titre']?></h4>
-        <p class="p_cards"><?php echo $film['genres']?></p>
-        <p class="year"><?php echo $film['annee']?></p>
-        <!-- MODAL -->
+        <!-- <p class="p_cards"><?php echo $film['genres']?></p>
+        <p class="year"><?php echo $film['annee']?></p> -->
       </div>
-      <a href="#demo_modal<?php echo $film['idfilms']?>" class="btn_modal">
-          En savoir plus
-        </a>
-    </div>
+    </a>
 
+    <!-- Modal pour info films -->
     <div id="demo_modal<?php echo $film['idfilms']?>" class="modal">
           <div class="modal_content">
             <img src="<?php echo $film['affiche']?>" alt="affiche film <?php echo $film['titre']?>" class="img_modal">
@@ -29,7 +26,7 @@
               <p class="modal_description"><?php echo $film['description']?></p>
               <p class="modal_annee"><?php echo $film['annee']?></p>
               <p class="modal_genre"><?php echo $film['genres']?></p>
-              <a href="#" class="modal_close">&times;</a>
+              <a href="#close" class="modal_close">&times;</a>
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
 <?php
 
+// Requête pour récupérer les films par genre avec toutes les infos (id, affiche, description, titre, genre )
 require('../_config/db.php');
 
 function getFilmByCat($catValue, $bdd){

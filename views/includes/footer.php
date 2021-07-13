@@ -1,4 +1,5 @@
     <footer>
+        <div class="bobine"></div>
         <div  class="icons">
             <a href="https://github.com/John03021992" target="_blank"><i class="fab fa-github fa-3x"></i></a>
             <a href="https://www.linkedin.com/in/jonathan-juillerat-692705210/" target="_blank"><i class="fab fa-linkedin-in fa-3x"></i></a>

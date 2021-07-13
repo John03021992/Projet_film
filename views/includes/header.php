@@ -6,9 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+  <!-- Fontawesome icons -->
   <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+  <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="assets/styles\css/style.css">
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/images/Logo_favicon.png" />
   <title>CineMax</title>
 </head>
@@ -19,7 +21,7 @@
         <h1>
           <!-- LOGO -->
           <button class="allFilms" value="Tous les films" >
-            <svg width="329" height="244" viewBox="0 0 329 244" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg class="logo" width="329" height="244" viewBox="0 0 329 244" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <path d="M126.137 181.559C126.137 183.126 125.48 184.475 124.168 185.605C122.855 186.717 121.27 187.273 119.41 187.273C117.569 187.273 115.983 186.717 114.652 185.605C113.34 184.475 112.684 183.126 112.684 181.559V153.23C112.684 151.663 113.34 150.323 114.652 149.211C115.983 148.081 117.569 147.516 119.41 147.516C121.27 147.516 122.855 148.081 124.168 149.211C125.48 150.323 126.137 151.663 126.137 153.23V159.547H121.652V150.77C121.652 150.15 121.434 149.621 120.996 149.184C120.559 148.746 120.03 148.527 119.41 148.527C118.79 148.527 118.262 148.746 117.824 149.184C117.387 149.621 117.168 150.15 117.168 150.77V184.02C117.168 184.639 117.387 185.168 117.824 185.605C118.262 186.043 118.79 186.262 119.41 186.262C120.03 186.262 120.559 186.043 120.996 185.605C121.434 185.168 121.652 184.639 121.652 184.02V175.242H126.137V181.559ZM134.312 154.516H129.938V147.789H134.312V154.516ZM135.707 187H128.543V185.988H129.938V158.891H128.543V157.879H134.312V185.988H135.707V187ZM152.059 187H146.316V160.859C146.316 159.438 145.77 158.727 144.676 158.727C143.965 158.727 143.29 159.046 142.652 159.684V185.988H144.074V187H136.883V185.988H138.305V158.891H136.883V157.879H142.652V158.672C143.473 157.961 144.557 157.605 145.906 157.605C149.078 157.605 150.664 159.319 150.664 162.746V185.988H152.059V187ZM166.414 181.559C166.414 183.163 165.812 184.521 164.609 185.633C163.424 186.727 161.921 187.273 160.098 187.273C158.275 187.273 156.762 186.727 155.559 185.633C154.355 184.521 153.754 183.163 153.754 181.559V163.32C153.754 161.716 154.355 160.367 155.559 159.273C156.762 158.161 158.275 157.605 160.098 157.605C161.921 157.605 163.424 158.161 164.609 159.273C165.812 160.367 166.414 161.716 166.414 163.32V172.891H158.129V184.02C158.129 185.514 158.785 186.262 160.098 186.262C161.392 186.262 162.039 185.514 162.039 184.02V178.086H166.414V181.559ZM162.039 171.879V160.859C162.039 159.365 161.392 158.617 160.098 158.617C158.785 158.617 158.129 159.365 158.129 160.859V171.879H162.039ZM166.031 148.363L160.207 156.211H158.977L161.273 147.789H166.031V148.363ZM187.77 187H180.496V185.988H181.891V159.273L178.746 187H175.164L171.473 159.273V185.988H172.867V187H168.684V185.988H170.078V148.801H168.684V147.789H174.617L178.473 178.332L181.836 147.789H187.77V148.801H186.375V185.988H187.77V187ZM203.41 187H197.641V186.207C196.82 186.918 195.772 187.273 194.496 187.273C191.397 187.273 189.848 185.56 189.848 182.133V175.68C189.848 172.07 191.999 170.266 196.301 170.266H197.641V160.859C197.641 159.365 197.094 158.617 196 158.617C194.924 158.617 194.387 159.365 194.387 160.859V166.793H190.012V163.32C190.012 161.589 190.549 160.203 191.625 159.164C192.719 158.125 194.177 157.605 196 157.605C197.841 157.605 199.299 158.125 200.375 159.164C201.451 160.203 201.988 161.589 201.988 163.32V185.988H203.41V187ZM197.641 185.195V171.277H196.355C194.934 171.277 194.223 172.016 194.223 173.492V184.02C194.223 185.441 194.724 186.152 195.727 186.152C196.365 186.152 197.003 185.833 197.641 185.195ZM217.711 187H210.328V185.988H211.723L209.59 176.473L206.855 185.988H208.25V187H203.984V185.988H205.379L209.043 174.012L205.516 158.891H204.094V157.879H211.504V158.891H210.082L212.105 167.969L214.73 158.891H213.336V157.879H217.602V158.891H216.207L212.68 170.484L216.316 185.988H217.711V187Z" fill="black"/>
               <path d="M104.581 208.033H103.56V232.016C103.56 233.164 103.08 234.152 102.119 234.979C101.158 235.793 99.9966 236.2 98.6353 236.2C97.2873 236.2 96.1328 235.793 95.1719 234.979C94.2109 234.152 93.7305 233.164 93.7305 232.016V208.033H92.6895V207.292H98.0347V208.033H97.0137V233.818C97.0137 234.272 97.1738 234.659 97.4941 234.979C97.8145 235.299 98.1948 235.459 98.6353 235.459C99.089 235.459 99.4761 235.299 99.7964 234.979C100.117 234.659 100.277 234.272 100.277 233.818V208.033H99.2559V207.292H104.581V208.033ZM116.533 236H112.329V216.861C112.329 215.82 111.928 215.3 111.127 215.3C110.607 215.3 110.113 215.533 109.646 216V235.259H110.687V236H105.422V235.259H106.463V215.42H105.422V214.679H109.646V215.26C110.247 214.739 111.041 214.479 112.028 214.479C114.351 214.479 115.512 215.734 115.512 218.243V235.259H116.533V236ZM140.296 236H136.072V216.861C136.072 215.82 135.678 215.3 134.891 215.3C134.277 215.3 133.663 215.627 133.049 216.281C133.289 216.815 133.409 217.469 133.409 218.243V235.259H134.43V236H130.226V216.861C130.226 215.82 129.826 215.3 129.025 215.3C128.504 215.3 128.011 215.533 127.543 216V235.259H128.584V236H123.319V235.259H124.36V215.42H123.319V214.679H127.543V215.26C128.144 214.739 128.938 214.479 129.926 214.479C131.247 214.479 132.195 214.886 132.769 215.7C133.583 214.886 134.59 214.479 135.792 214.479C138.114 214.479 139.275 215.734 139.275 218.243V235.259H140.296V236ZM151.367 236H147.143V235.419C146.542 235.94 145.775 236.2 144.84 236.2C142.571 236.2 141.437 234.946 141.437 232.437V227.712C141.437 225.069 143.012 223.748 146.162 223.748H147.143V216.861C147.143 215.767 146.742 215.22 145.941 215.22C145.154 215.22 144.76 215.767 144.76 216.861V221.206H141.557V218.663C141.557 217.395 141.951 216.381 142.738 215.62C143.539 214.859 144.607 214.479 145.941 214.479C147.289 214.479 148.357 214.859 149.145 215.62C149.932 216.381 150.326 217.395 150.326 218.663V235.259H151.367V236ZM147.143 234.679V224.489H146.202C145.161 224.489 144.64 225.029 144.64 226.11V233.818C144.64 234.859 145.007 235.379 145.741 235.379C146.208 235.379 146.675 235.146 147.143 234.679ZM161.837 236H156.432V235.259H157.453L155.891 228.292L153.889 235.259H154.91V236H151.787V235.259H152.808L155.491 226.491L152.908 215.42H151.867V214.679H157.292V215.42H156.251L157.733 222.066L159.655 215.42H158.634V214.679H161.757V215.42H160.736L158.153 223.908L160.816 235.259H161.837V236ZM179.354 236H175.13V235.419C174.529 235.94 173.735 236.2 172.748 236.2C170.425 236.2 169.264 234.946 169.264 232.437V218.243C169.264 215.734 170.425 214.479 172.748 214.479C173.735 214.479 174.529 214.739 175.13 215.26V208.033H174.109V207.292H178.333V235.259H179.354V236ZM175.13 234.679V216C174.663 215.533 174.169 215.3 173.648 215.3C172.861 215.3 172.467 215.82 172.467 216.861V233.818C172.467 234.859 172.861 235.379 173.648 235.379C174.169 235.379 174.663 235.146 175.13 234.679ZM189.984 232.016C189.984 233.191 189.544 234.185 188.663 234.999C187.796 235.8 186.694 236.2 185.36 236.2C184.025 236.2 182.917 235.8 182.037 234.999C181.156 234.185 180.715 233.191 180.715 232.016V218.663C180.715 217.489 181.156 216.501 182.037 215.7C182.917 214.886 184.025 214.479 185.36 214.479C186.694 214.479 187.796 214.886 188.663 215.7C189.544 216.501 189.984 217.489 189.984 218.663V225.67H183.918V233.818C183.918 234.912 184.399 235.459 185.36 235.459C186.307 235.459 186.781 234.912 186.781 233.818V229.474H189.984V232.016ZM186.781 224.929V216.861C186.781 215.767 186.307 215.22 185.36 215.22C184.399 215.22 183.918 215.767 183.918 216.861V224.929H186.781ZM207.481 232.016C207.481 233.191 207.041 234.185 206.16 234.999C205.293 235.8 204.192 236.2 202.857 236.2C201.522 236.2 200.415 235.8 199.534 234.999C198.653 234.185 198.212 233.191 198.212 232.016V218.663C198.212 217.489 198.653 216.501 199.534 215.7C200.415 214.886 201.522 214.479 202.857 214.479C204.192 214.479 205.293 214.886 206.16 215.7C207.041 216.501 207.481 217.489 207.481 218.663V221.206H204.278V216.861C204.278 215.767 203.805 215.22 202.857 215.22C201.896 215.22 201.416 215.767 201.416 216.861V233.818C201.416 234.912 201.896 235.459 202.857 235.459C203.805 235.459 204.278 234.912 204.278 233.818V229.474H207.481V232.016ZM213.167 212.217H209.964V207.292H213.167V212.217ZM214.188 236H208.943V235.259H209.964V215.42H208.943V214.679H213.167V235.259H214.188V236ZM226.16 236H221.956V216.861C221.956 215.82 221.555 215.3 220.754 215.3C220.234 215.3 219.74 215.533 219.273 216V235.259H220.314V236H215.049V235.259H216.09V215.42H215.049V214.679H219.273V215.26C219.874 214.739 220.668 214.479 221.655 214.479C223.978 214.479 225.139 215.734 225.139 218.243V235.259H226.16V236ZM236.67 232.016C236.67 233.191 236.229 234.185 235.349 234.999C234.481 235.8 233.38 236.2 232.045 236.2C230.711 236.2 229.603 235.8 228.722 234.999C227.841 234.185 227.401 233.191 227.401 232.016V218.663C227.401 217.489 227.841 216.501 228.722 215.7C229.603 214.886 230.711 214.479 232.045 214.479C233.38 214.479 234.481 214.886 235.349 215.7C236.229 216.501 236.67 217.489 236.67 218.663V225.67H230.604V233.818C230.604 234.912 231.084 235.459 232.045 235.459C232.993 235.459 233.467 234.912 233.467 233.818V229.474H236.67V232.016ZM233.467 224.929V216.861C233.467 215.767 232.993 215.22 232.045 215.22C231.084 215.22 230.604 215.767 230.604 216.861V224.929H233.467ZM236.39 207.712L232.125 213.458H231.225L232.906 207.292H236.39V207.712Z" fill="black"/>
               <rect x="94" width="141" height="126" fill="url(#pattern0)"/>
@@ -37,72 +39,73 @@
           <span class="navbar-toggler-icon menu"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto nav_menu">
             <li class="nav-item" aria-current="page">
-              <button class="categories nav-link active networks" value="Action">Action</button>
+              <button class="categories dropdown-item" value="Action">Action</button>
+            </li>
+            <li class="nav-item bg-secondarie">
+              <button class="categories dropdown-item" href="#" value="Comédie">Comédie</button>
             </li>
             <li class="nav-item">
-              <button class="categories nav-link" value="Comédie">Comédie</button>
+              <button class="categories dropdown-item" href="#" value="Drame">Drame</button>
             </li>
             <li class="nav-item">
-              <button class="categories nav-link" value="Drame">Drame</button>
+              <button class="categories dropdown-item" href="#" value="Romance">Romance</button>
             </li>
             <li class="nav-item">
-              <button class="categories nav-link" value="Romance">Romance</button>
+              <button class="categories dropdown-item" href="#" value="Fantastique">Fantastique</button>
             </li>
             <li class="nav-item">
-              <button class="categories nav-link" value="Fantastique">Fantastique</button>
+              <button class="categories dropdown-item" href="#" value="Thriller">Thriller</button>
             </li>
             <li class="nav-item">
-              <button class="categories nav-link" value="Thriller">Thriller</button>
+              <button class="categories dropdown-item" href="#" value="Policier">Policier</button>
             </li>
             <li class="nav-item">
-              <button class="categories nav-link" value="Policier">Policier</button>
+              <button class="categories dropdown-item" href="#" value="Animation">Animation</button>
             </li>
             <li class="nav-item">
-              <button class="categories nav-link" value="Animation">Animation</button>
+              <button class="categories dropdown-item" href="#" value="Science-fiction">Science-Fiction</button>
             </li>
             <li class="nav-item">
-              <button class="categories nav-link" value="Science-fiction">Science-Fiction</button>
+              <button class="categories dropdown-item" href="#" value="Horreur">Horreur</button>
             </li>
             <li class="nav-item">
-              <button class="categories nav-link" value="Horreur">Horreur</button>
+              <button class="categories dropdown-item" href="#" value="Aventure">Aventure</button>
             </li>
             <li class="nav-item">
-              <button class="categories nav-link" value="Aventure">Aventure</button>
+              <button class="categories dropdown-item" href="#" value="Biopic">Biopic</button>
             </li>
             <li class="nav-item">
-              <button class="categories nav-link" value="Biopic">Biopic</button>
+              <button class="categories dropdown-item" href="#" value="Surréaliste">Surréaliste</button>
             </li>
             <li class="nav-item">
-              <button class="categories nav-link" value="Surréaliste">Surréaliste</button>
+              <button class="categories dropdown-item" href="#" value="Psychologique">Psychologique</button>
             </li>
             <li class="nav-item">
-              <button class="categories nav-link" value="Psychologique">Psychologique</button>
+              <button class="categories dropdown-item" href="#" value="Gangster">Gangster</button>
             </li>
             <li class="nav-item">
-              <button class="categories nav-link" value="Gangster">Gangster</button>
+              <button class="categories dropdown-item" href="#" value="Autobiographique">Autobiographique</button>
             </li>
             <li class="nav-item">
-              <button class="categories nav-link" value="Autobiographique">Autobiographique</button>
+              <button class="categories dropdown-item" href="#" value="Film de pirates">Films de pirates</button>
             </li>
             <li class="nav-item">
-              <button class="categories nav-link" value="Film de pirates">Films de pirates</button>
+              <button class="categories dropdown-item" href="#" value="Comédie arts martiaux">Comédie d'arts martiaux</button>
             </li>
             <li class="nav-item">
-              <button class="categories nav-link" value="Comédie arts martiaux">Comédie d'arts martiaux</button>
+              <button class="categories dropdown-item" href="#" value="Jeunesse">Jeunesse</button>
             </li>
             <li class="nav-item">
-              <button class="categories nav-link" value="Jeunesse">Jeunesse</button>
-            </li>
-            <li class="nav-item">
-              <button class="categories nav-link" value="Animation japonais">Animation japonais</button>
+              <button class="categories dropdown-item" href="#" value="Animation japonais">Animation japonais</button>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <div class="buttonsHeader">
+      <!-- Barre de recherche -->
       <form method="POST" class="List_Group_Categories">
         <section class="search_films">
           <div class="wrap">
@@ -115,6 +118,7 @@
           </div>
         </section>   
       </form>
-  </div>
+    </div>
+    <div class="bobine"></div>
 </header>
 

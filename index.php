@@ -12,14 +12,14 @@ $url = explode('/', $_SERVER['REQUEST_URI']);
 
 switch ($url) {
 case $url[2] == '':
-    require 'views/home_view.php';
+    require 'controllers/home_controller.php';
 // echo 'Home page';
 break;
 default:
-http_response_code(404);
-echo "404";
+    http_response_code(404);
+    require 'views/page404.php';
 break;
 }
 
-
 ?>   
+
